@@ -1,0 +1,12 @@
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\bin\Debug\net6.0\ETrade.Entities.deps.json
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\bin\Debug\net6.0\ETrade.Entities.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\bin\Debug\net6.0\ETrade.Entities.pdb
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.csproj.AssemblyReference.cache
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.AssemblyInfoInputs.cache
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.AssemblyInfo.cs
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.csproj.CoreCompileInputs.cache
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\obj\Debug\net6.0\refint\ETrade.Entities.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.pdb
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Entities\obj\Debug\net6.0\ref\ETrade.Entities.dll
