@@ -68,7 +68,7 @@ namespace ETrade.Core
 
         public T Get(Expression<Func<T, bool>> filter)
         {
-            return Set().SingleOrDefault(filter);
+            return Set().FirstOrDefault(filter);
         }
 
         public List<T> List(Expression<Func<T, bool>> filter = null)
