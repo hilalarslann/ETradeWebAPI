@@ -2,6 +2,8 @@ using ETrade.Dal;
 using ETrade.Entities.Concrete;
 using ETrade.Repos.Abstract;
 using ETrade.Repos.Concrete;
+using ETrade.UI;
+using ETrade.UoW;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,11 +28,11 @@ builder.Services.AddScoped<IProductRep, ProductRep<Product>>();
 builder.Services.AddScoped<IUnitRep, UnitRep<Unit>>();
 builder.Services.AddScoped<IVatRep, VatRep<Vat>>();
 builder.Services.AddScoped<IUserRep, UserRep<User>>();
-builder.Services.AddScoped<IUow, Uow>();
-//builder.Services.AddScoped<UserModel>();
-builder.Services.AddScoped<BasketDetailModel>();
+builder.Services.AddScoped<IUoW, UoW>();
+builder.Services.AddScoped<User>();
 builder.Services.AddScoped<BasketMaster>();
 builder.Services.AddScoped<BasketDetail>();
+builder.Services.AddScoped<Response>();
 
 var app = builder.Build();
 

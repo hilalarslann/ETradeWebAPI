@@ -14,8 +14,8 @@ namespace ETrade.Entities.Concrete
         public string Password { get; set; }
         public string Role { get; set; }
         [ForeignKey("CountyId")]
-        public County County { get; set; }
+        public County ?County { get; set; }
         public bool Error { get; set; }
-        public ICollection<BasketMaster> BasketMaster { get; set; }
+        public ICollection<BasketMaster> ?BasketMaster { get; set; }
     }
 }

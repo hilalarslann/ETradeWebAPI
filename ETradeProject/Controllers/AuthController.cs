@@ -1,5 +1,4 @@
 ﻿using ETrade.Entities.Concrete;
-using ETrade.UI.Models;
 using ETrade.UoW;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,12 +10,10 @@ namespace ETrade.UI.Controllers
     public class AuthController : ControllerBase
     {
         IUoW _uow;
-        UserModel _userModel;
         Response _response;
-        public AuthController(IUoW uow, UserModel userModel)
+        public AuthController(IUoW uow)
         {
             _uow = uow;
-            _userModel = userModel;
         }
 
         //[HttpGet]
@@ -28,19 +25,35 @@ namespace ETrade.UI.Controllers
         //}
 
         [HttpPost]
-        public Response Register(User user)
+        public JsonResult Register(User user)
         {
-            _uow._UserRep.CreateUser(user);
+            string msg;
+            user = _uow._UserRep.CreateUser(user);
             try
             {
-                
+                if (!user.Error)
+                {
+                    _uow._UserRep.Add(user);
+                    _uow.Commit();
+                    user.Error = false;
+                    msg = "Başarıyla eklenmiştir.";
+                }
+                else
+                {
+                    user.Error = true;
+                    msg = $"{user.Mail} zaten mevcut";
+                }
             }
             catch (Exception ex)
             {
-
+                msg = ex.Message;
                 throw;
             }
-            return _response;
+            return new JsonResult(msg)
+            {
+                Value = msg,
+                ContentType = "charset=UTF-8"
+            };
         }
 
     }

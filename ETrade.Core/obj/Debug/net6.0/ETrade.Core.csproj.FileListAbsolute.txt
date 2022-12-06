@@ -1,0 +1,17 @@
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\bin\Debug\net6.0\ETrade.Core.deps.json
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\bin\Debug\net6.0\ETrade.Core.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\bin\Debug\net6.0\ETrade.Core.pdb
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\bin\Debug\net6.0\ETrade.Dal.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\bin\Debug\net6.0\ETrade.Entities.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\bin\Debug\net6.0\ETrade.Dal.pdb
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\bin\Debug\net6.0\ETrade.Entities.pdb
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\obj\Debug\net6.0\ETrade.Core.csproj.AssemblyReference.cache
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\obj\Debug\net6.0\ETrade.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\obj\Debug\net6.0\ETrade.Core.AssemblyInfoInputs.cache
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\obj\Debug\net6.0\ETrade.Core.AssemblyInfo.cs
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\obj\Debug\net6.0\ETrade.Core.csproj.CoreCompileInputs.cache
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\obj\Debug\net6.0\ETrade.Core.csproj.CopyComplete
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\obj\Debug\net6.0\ETrade.Core.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\obj\Debug\net6.0\refint\ETrade.Core.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\obj\Debug\net6.0\ETrade.Core.pdb
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETrade.Core\obj\Debug\net6.0\ref\ETrade.Core.dll

@@ -89,3 +89,10 @@ C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debu
 C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debug\net6.0\ETrade.Core.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debug\net6.0\ETrade.Repos.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debug\net6.0\ETrade.UoW.dll
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debug\net6.0\ETrade.Repos.pdb
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debug\net6.0\ETrade.UoW.pdb
+C:\Users\hilal\OneDrive\Masaüstü\Projects\ETradeProject\ETradeProject\bin\Debug\net6.0\ETrade.Core.pdb

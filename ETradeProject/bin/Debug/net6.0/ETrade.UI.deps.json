@@ -8,7 +8,10 @@
     ".NETCoreApp,Version=v6.0": {
       "ETrade.UI/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "ETrade.Dal": "1.0.0",
+          "ETrade.Repos": "1.0.0",
+          "ETrade.UoW": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.0",
@@ -49,6 +52,14 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.6.0.0",
             "fileVersion": "1.600.22.20503"
+          }
+        }
+      },
+      "BCrypt.Net-Next/4.0.3": {
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
           }
         }
       },
@@ -748,6 +759,15 @@
           }
         }
       },
+      "ETrade.Core/1.0.0": {
+        "dependencies": {
+          "ETrade.Dal": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.0"
+        },
+        "runtime": {
+          "ETrade.Core.dll": {}
+        }
+      },
       "ETrade.Dal/1.0.0": {
         "dependencies": {
           "ETrade.Entities": "1.0.0",
@@ -761,6 +781,24 @@
       "ETrade.Entities/1.0.0": {
         "runtime": {
           "ETrade.Entities.dll": {}
+        }
+      },
+      "ETrade.Repos/1.0.0": {
+        "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
+          "ETrade.Core": "1.0.0",
+          "ETrade.Entities": "1.0.0"
+        },
+        "runtime": {
+          "ETrade.Repos.dll": {}
+        }
+      },
+      "ETrade.UoW/1.0.0": {
+        "dependencies": {
+          "ETrade.Repos": "1.0.0"
+        },
+        "runtime": {
+          "ETrade.UoW.dll": {}
         }
       }
     }
@@ -784,6 +822,13 @@
       "sha512": "sha512-EycyMsb6rD2PK9P0SyibFfEhvWWttdrYhyPF4f41uzdB/44yQlV+2Wehxyg489Rj6gbPvSPgbKq0xsHJBhipZA==",
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
+    },
+    "BCrypt.Net-Next/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "path": "bcrypt.net-next/4.0.3",
+      "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1289,12 +1334,27 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
+    "ETrade.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ETrade.Dal/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "ETrade.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ETrade.Repos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ETrade.UoW/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
