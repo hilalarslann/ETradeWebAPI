@@ -1,4 +1,4 @@
-﻿namespace ETrade.UI
+﻿namespace ETrade.UI.HttpResponse
 {
     public class Response
     {

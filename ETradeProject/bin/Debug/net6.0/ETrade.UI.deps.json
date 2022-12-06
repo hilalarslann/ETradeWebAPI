@@ -10,6 +10,7 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "ETrade.Dal": "1.0.0",
+          "ETrade.Entities": "1.0.0",
           "ETrade.Repos": "1.0.0",
           "ETrade.UoW": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.0",

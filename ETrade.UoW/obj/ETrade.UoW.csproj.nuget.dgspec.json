@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.UoW\\ETrade.UoW.csproj": {}
+    "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.UoW\\ETrade.UoW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Core\\ETrade.Core.csproj": {
+    "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Core\\ETrade.Core.csproj",
+        "projectUniqueName": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj",
         "projectName": "ETrade.Core",
-        "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Core\\ETrade.Core.csproj",
-        "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Core\\obj\\",
+        "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj",
+        "packagesPath": "C:\\Users\\SEM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Dal\\ETrade.Dal.csproj": {
-                "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Dal\\ETrade.Dal.csproj"
+              "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj": {
+                "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj"
               }
             }
           }
@@ -65,21 +70,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Dal\\ETrade.Dal.csproj": {
+    "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Dal\\ETrade.Dal.csproj",
+        "projectUniqueName": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj",
         "projectName": "ETrade.Dal",
-        "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Dal\\ETrade.Dal.csproj",
-        "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Dal\\obj\\",
+        "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj",
+        "packagesPath": "C:\\Users\\SEM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Dal\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,14 +96,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Entities\\ETrade.Entities.csproj": {
-                "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Entities\\ETrade.Entities.csproj"
+              "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
+                "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj"
               }
             }
           }
@@ -140,21 +150,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Entities\\ETrade.Entities.csproj": {
+    "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Entities\\ETrade.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
         "projectName": "ETrade.Entities",
-        "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Entities\\ETrade.Entities.csproj",
-        "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Entities\\obj\\",
+        "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
+        "packagesPath": "C:\\Users\\SEM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -162,6 +176,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -195,21 +210,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Repos\\ETrade.Repos.csproj": {
+    "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Repos\\ETrade.Repos.csproj",
+        "projectUniqueName": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj",
         "projectName": "ETrade.Repos",
-        "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Repos\\ETrade.Repos.csproj",
-        "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Repos\\obj\\",
+        "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj",
+        "packagesPath": "C:\\Users\\SEM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Repos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -217,17 +236,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Core\\ETrade.Core.csproj": {
-                "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Core\\ETrade.Core.csproj"
+              "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj": {
+                "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj"
               },
-              "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Entities\\ETrade.Entities.csproj": {
-                "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Entities\\ETrade.Entities.csproj"
+              "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
+                "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj"
               }
             }
           }
@@ -263,21 +283,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.UoW\\ETrade.UoW.csproj": {
+    "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.UoW\\ETrade.UoW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.UoW\\ETrade.UoW.csproj",
+        "projectUniqueName": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.UoW\\ETrade.UoW.csproj",
         "projectName": "ETrade.UoW",
-        "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.UoW\\ETrade.UoW.csproj",
-        "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.UoW\\obj\\",
+        "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.UoW\\ETrade.UoW.csproj",
+        "packagesPath": "C:\\Users\\SEM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.UoW\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -285,14 +309,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Repos\\ETrade.Repos.csproj": {
-                "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Repos\\ETrade.Repos.csproj"
+              "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj": {
+                "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj"
               }
             }
           }
@@ -322,7 +347,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,5 @@
 ﻿using ETrade.Entities.Concrete;
+using ETrade.UI.HttpResponse;
 using ETrade.UoW;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,23 +12,15 @@ namespace ETrade.UI.Controllers
     {
         IUoW _uow;
         Response _response;
-        public AuthController(IUoW uow)
+        public AuthController(IUoW uow, Response response)
         {
             _uow = uow;
+            _response = response;
         }
 
-        //[HttpGet]
-        //public JsonResult Register()
-        //{
-        //    _userModel.User = new User();
-        //    _userModel.Counties = _uow._CountyRep.List();
-        //    return new JsonResult(_userModel);
-        //}
-
         [HttpPost]
-        public JsonResult Register(User user)
+        public Response Register(User user)
         {
-            string msg;
             user = _uow._UserRep.CreateUser(user);
             try
             {
@@ -35,26 +28,21 @@ namespace ETrade.UI.Controllers
                 {
                     _uow._UserRep.Add(user);
                     _uow.Commit();
-                    user.Error = false;
-                    msg = "Başarıyla eklenmiştir.";
+                    _response.Error = false;
+                    _response.Msg = "Başarıyla eklenmiştir.";
                 }
                 else
                 {
-                    user.Error = true;
-                    msg = $"{user.Mail} zaten mevcut";
+                    _response.Error = true;
+                    _response.Msg = $"{user.Mail} zaten mevcut";
                 }
             }
             catch (Exception ex)
             {
-                msg = ex.Message;
-                throw;
+                _response.Msg = ex.Message;
+                _response.Error = true;
             }
-            return new JsonResult(msg)
-            {
-                Value = msg,
-                ContentType = "charset=UTF-8"
-            };
+            return (_response);
         }
-
     }
 }

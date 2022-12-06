@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "L2KCdxDNLMAA2g7XVivlurr7miHadR2T3OYoMfjwNvY=",
-  "Source": "ETrade.UI",
-  "BasePath": "_content/ETrade.UI",
+  "Hash": "H/1fXStPO+UKVFWxMC/ai5duO9PY/rLUnK9oqmLDIOs=",
+  "Source": "ETrade.Service",
+  "BasePath": "_content/ETrade.Service",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

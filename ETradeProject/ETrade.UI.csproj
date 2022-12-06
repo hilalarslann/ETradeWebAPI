@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ETrade.Dal\ETrade.Dal.csproj" />
+    <ProjectReference Include="..\ETrade.Entities\ETrade.Entities.csproj" />
     <ProjectReference Include="..\ETrade.Repos\ETrade.Repos.csproj" />
     <ProjectReference Include="..\ETrade.UoW\ETrade.UoW.csproj" />
   </ItemGroup>

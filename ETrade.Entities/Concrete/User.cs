@@ -12,10 +12,12 @@ namespace ETrade.Entities.Concrete
     {
         public string Mail { get; set; }
         public string Password { get; set; }
-        public string Role { get; set; }
+        public string? Role { get; set; }
         [ForeignKey("CountyId")]
-        public County ?County { get; set; }
+        public County? County { get; set; }
         public bool Error { get; set; }
-        public ICollection<BasketMaster> ?BasketMaster { get; set; }
+        public ICollection<BasketMaster>? BasketMaster { get; set; }
+
+        //soru işareti koymak zorunda kaldım
     }
 }

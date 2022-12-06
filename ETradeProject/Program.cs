@@ -2,7 +2,7 @@ using ETrade.Dal;
 using ETrade.Entities.Concrete;
 using ETrade.Repos.Abstract;
 using ETrade.Repos.Concrete;
-using ETrade.UI;
+using ETrade.Service.Response;
 using ETrade.UoW;
 using Microsoft.EntityFrameworkCore;
 

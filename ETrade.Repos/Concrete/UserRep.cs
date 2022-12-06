@@ -2,6 +2,7 @@
 using ETrade.Dal;
 using ETrade.Entities.Concrete;
 using ETrade.Repos.Abstract;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,6 @@ namespace ETrade.Repos.Concrete
         {
             _db = db;
         }
-
         public User CreateUser(User user)
         {
             User selectedUser = Get(x => x.Mail == user.Mail);
@@ -26,10 +26,38 @@ namespace ETrade.Repos.Concrete
             else
                 user.Error = true;
 
+            // CheckPassword(user.Password); 
+
+            if (user.Password.Length >= 8 && (user.Password.Length <= 14))
+            {
+
+            }
+            else
+            {
+                string passMsg = "Şifreniz....";
+            }
+
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             user.Role = "User";
             return user;
+        }
+
+        public void CheckPassword(string password)
+        {
+            if (password.Length >= 8 && (password.Length <= 14))
+            {
+
+            }
+            else
+            {
+                Console.WriteLine("sdfdf");
+            }
+
+
+
+
 
         }
+
     }
 }

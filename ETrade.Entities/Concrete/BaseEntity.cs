@@ -15,4 +15,5 @@ namespace ETrade.Entities.Concrete
         public int No { get; set; }
         public int CountyId { get; set; }
     }
+    //veritipi değişmini nasıl yaparız migrationı silmeden 
 }

@@ -3854,6 +3854,7 @@
     "net6.0": [
       "BCrypt.Net-Next >= 4.0.3",
       "ETrade.Dal >= 1.0.0",
+      "ETrade.Entities >= 1.0.0",
       "ETrade.Repos >= 1.0.0",
       "ETrade.UoW >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.0",
@@ -3863,19 +3864,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hilal\\.nuget\\packages\\": {}
+    "C:\\Users\\SEM\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETradeProject\\ETrade.UI.csproj",
+      "projectUniqueName": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETradeProject\\ETrade.UI.csproj",
       "projectName": "ETrade.UI",
-      "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETradeProject\\ETrade.UI.csproj",
-      "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETradeProject\\obj\\",
+      "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETradeProject\\ETrade.UI.csproj",
+      "packagesPath": "C:\\Users\\SEM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETradeProject\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3883,20 +3889,24 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Dal\\ETrade.Dal.csproj": {
-              "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Dal\\ETrade.Dal.csproj"
+            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj": {
+              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj"
             },
-            "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Repos\\ETrade.Repos.csproj": {
-              "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.Repos\\ETrade.Repos.csproj"
+            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
+              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj"
             },
-            "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.UoW\\ETrade.UoW.csproj": {
-              "projectPath": "C:\\Users\\hilal\\OneDrive\\Masaüstü\\Projects\\ETradeProject\\ETrade.UoW\\ETrade.UoW.csproj"
+            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj": {
+              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj"
+            },
+            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.UoW\\ETrade.UoW.csproj": {
+              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.UoW\\ETrade.UoW.csproj"
             }
           }
         }
@@ -3953,7 +3963,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
