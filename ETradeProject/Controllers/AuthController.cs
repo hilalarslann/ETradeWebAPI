@@ -24,12 +24,16 @@ namespace ETrade.UI.Controllers
             user = _uow._UserRep.CreateUser(user);
             try
             {
-                if (!user.Error)
+                if (!(user.Error) && (user.CheckPassword))
                 {
                     _uow._UserRep.Add(user);
                     _uow.Commit();
                     _response.Error = false;
                     _response.Msg = "Başarıyla eklenmiştir.";
+                }
+                else if (!user.CheckPassword)
+                {
+                    _response.Msg = $"Şifreniz en az 7 karakter ve en fazla 64 karakter olmalı, büyük ve küçük harf içermelidir.";
                 }
                 else
                 {

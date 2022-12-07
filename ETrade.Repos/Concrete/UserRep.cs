@@ -26,37 +26,26 @@ namespace ETrade.Repos.Concrete
             else
                 user.Error = true;
 
-            // CheckPassword(user.Password); 
-
-            if (user.Password.Length >= 8 && (user.Password.Length <= 14))
-            {
-
-            }
-            else
-            {
-                string passMsg = "Şifreniz....";
-            }
+            CheckPassword(user);
 
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             user.Role = "User";
             return user;
         }
-
-        public void CheckPassword(string password)
+        public void CheckPassword(User user)
         {
-            if (password.Length >= 8 && (password.Length <= 14))
+            if ((user.Password.Length >= 8) && (user.Password.Length <= 14) && (user.Password.Any(char.IsLower)) && (user.Password.Any(char.IsUpper)))
             {
-
+                user.CheckPassword = true;
+            }
+            else if (user.Password.Contains(" "))
+            {
+                user.CheckPassword = false;
             }
             else
             {
-                Console.WriteLine("sdfdf");
+                user.CheckPassword = false;
             }
-
-
-
-
-
         }
 
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {}
+    "C:\\Users\\SEM\\Documents\\GitHub\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
+    "C:\\Users\\SEM\\Documents\\GitHub\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\SEM\\Documents\\GitHub\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
         "projectName": "ETrade.Entities",
-        "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
+        "projectPath": "C:\\Users\\SEM\\Documents\\GitHub\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
         "packagesPath": "C:\\Users\\SEM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\obj\\",
+        "outputPath": "C:\\Users\\SEM\\Documents\\GitHub\\ETradeWebAPI\\ETrade.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
