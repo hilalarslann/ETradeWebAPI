@@ -106,6 +106,7 @@ namespace ETrade.Repos.Concrete
                 result.Msg = "14 karakter";
                 return result;
             }
+<<<<<<< Updated upstream
             if (user.Password != user.RePassword)
             {
                 result.IsSucceed = false;
@@ -113,6 +114,8 @@ namespace ETrade.Repos.Concrete
                 return result;
             }
             return result;
+=======
+>>>>>>> Stashed changes
         }
 
     }
