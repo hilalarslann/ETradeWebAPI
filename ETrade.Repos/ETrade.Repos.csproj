@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ETrade.Core\ETrade.Core.csproj" />
+    <ProjectReference Include="..\ETrade.DTO\ETrade.DTO.csproj" />
     <ProjectReference Include="..\ETrade.Entities\ETrade.Entities.csproj" />
   </ItemGroup>
 

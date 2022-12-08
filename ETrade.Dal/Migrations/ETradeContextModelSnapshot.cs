@@ -206,20 +206,16 @@ namespace ETrade.Dal.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Avenue")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CountyId")
+                    b.Property<int?>("CountyId")
                         .HasColumnType("int");
-
-                    b.Property<bool>("Error")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Mail")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("No")
+                    b.Property<int?>("No")
                         .HasColumnType("int");
 
                     b.Property<string>("Password")
@@ -227,11 +223,9 @@ namespace ETrade.Dal.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Role")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Street")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -342,9 +336,7 @@ namespace ETrade.Dal.Migrations
                 {
                     b.HasOne("ETrade.Entities.Concrete.County", "County")
                         .WithMany("Users")
-                        .HasForeignKey("CountyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CountyId");
 
                     b.Navigation("County");
                 });

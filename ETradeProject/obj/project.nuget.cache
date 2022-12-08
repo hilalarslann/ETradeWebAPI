@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cSFlDZijLAdKHbDxx5r1L+UWlSYEtYzycBANcA/K2CYeSQYrnaSg3f4JMbK5DKSPD3AWkKBivM5+CXD9XsdsLQ==",
+  "dgSpecHash": "h18s7CjsvfoEFumq16kn1VNWu61Oea7rybFvPFeJA1h4b1Sq7JwS7BeFnYTwoNTBE36nkhM7sNDppsnAdSb2yQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SEM\\Documents\\GitHub\\ETradeWebAPI\\ETradeProject\\ETrade.UI.csproj",
+  "projectFilePath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETradeProject\\ETrade.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SEM\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\SEM\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

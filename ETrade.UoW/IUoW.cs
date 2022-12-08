@@ -19,7 +19,7 @@ namespace ETrade.UoW
         IUnitRep _UnitRep { get; }
         IUserRep _UserRep { get; }
         IVatRep _VatRep { get; }
-        void Commit();
+        bool Commit();
 
     }
 }

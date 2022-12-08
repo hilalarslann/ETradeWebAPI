@@ -637,6 +637,11 @@
           "ETrade.Dal.dll": {}
         }
       },
+      "ETrade.DTO/1.0.0": {
+        "runtime": {
+          "ETrade.DTO.dll": {}
+        }
+      },
       "ETrade.Entities/1.0.0": {
         "runtime": {
           "ETrade.Entities.dll": {}
@@ -646,6 +651,7 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "ETrade.Core": "1.0.0",
+          "ETrade.DTO": "1.0.0",
           "ETrade.Entities": "1.0.0"
         },
         "runtime": {
@@ -1107,6 +1113,11 @@
       "sha512": ""
     },
     "ETrade.Dal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ETrade.DTO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

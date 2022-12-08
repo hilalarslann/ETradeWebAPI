@@ -15,10 +15,6 @@ namespace ETrade.Entities.Concrete
         public string? Role { get; set; }
         [ForeignKey("CountyId")]
         public County? County { get; set; }
-        public bool Error { get; set; }
-        public bool CheckPassword { get; set; }
         public ICollection<BasketMaster>? BasketMaster { get; set; }
-
-        //soru işareti koymak zorunda kaldım
     }
 }

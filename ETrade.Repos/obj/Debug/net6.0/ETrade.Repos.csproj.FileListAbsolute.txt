@@ -36,3 +36,5 @@ C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.Repos\obj\Debug\net6.0\ETrade.Repos.dll
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.Repos\obj\Debug\net6.0\refint\ETrade.Repos.dll
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.Repos\obj\Debug\net6.0\ETrade.Repos.pdb
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.Repos\obj\Debug\net6.0\ref\ETrade.Repos.dll
+C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.Repos\bin\Debug\net6.0\ETrade.DTO.dll
+C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.Repos\bin\Debug\net6.0\ETrade.DTO.pdb

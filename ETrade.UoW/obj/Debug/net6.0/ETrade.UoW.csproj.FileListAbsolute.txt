@@ -40,3 +40,5 @@ C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.UoW\obj\Debug\net6.0\ETrade.UoW.dll
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.UoW\obj\Debug\net6.0\refint\ETrade.UoW.dll
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.UoW\obj\Debug\net6.0\ETrade.UoW.pdb
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.UoW\obj\Debug\net6.0\ref\ETrade.UoW.dll
+C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.UoW\bin\Debug\net6.0\ETrade.DTO.dll
+C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.UoW\bin\Debug\net6.0\ETrade.DTO.pdb

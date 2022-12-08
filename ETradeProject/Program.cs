@@ -1,8 +1,9 @@
 using ETrade.Dal;
+using ETrade.DTO;
 using ETrade.Entities.Concrete;
 using ETrade.Repos.Abstract;
 using ETrade.Repos.Concrete;
-using ETrade.Service.Response;
+using ETrade.UI.HttpResponse;
 using ETrade.UoW;
 using Microsoft.EntityFrameworkCore;
 
@@ -33,6 +34,8 @@ builder.Services.AddScoped<User>();
 builder.Services.AddScoped<BasketMaster>();
 builder.Services.AddScoped<BasketDetail>();
 builder.Services.AddScoped<Response>();
+builder.Services.AddScoped<UserDTO>();
+
 
 var app = builder.Build();
 
