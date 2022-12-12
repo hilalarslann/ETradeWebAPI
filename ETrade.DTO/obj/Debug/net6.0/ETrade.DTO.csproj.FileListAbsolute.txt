@@ -10,3 +10,6 @@ C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.DTO\obj\Debug\net6.0\ETrade.DTO.dll
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.DTO\obj\Debug\net6.0\refint\ETrade.DTO.dll
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.DTO\obj\Debug\net6.0\ETrade.DTO.pdb
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.DTO\obj\Debug\net6.0\ref\ETrade.DTO.dll
+C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.DTO\bin\Debug\net6.0\ETrade.Entities.dll
+C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.DTO\bin\Debug\net6.0\ETrade.Entities.pdb
+C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.DTO\obj\Debug\net6.0\ETrade.DTO.csproj.CopyComplete

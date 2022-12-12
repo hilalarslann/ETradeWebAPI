@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ETrade.DTO/1.0.0": {
+        "dependencies": {
+          "ETrade.Entities": "1.0.0"
+        },
         "runtime": {
           "ETrade.DTO.dll": {}
+        }
+      },
+      "ETrade.Entities/1.0.0": {
+        "runtime": {
+          "ETrade.Entities.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ETrade.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ETrade.Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -10,5 +10,6 @@ namespace ETrade.Repos.Abstract
 {
     public interface ICategoryRep : IBaseRepository<Category>
     {
+
     }
 }

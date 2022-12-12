@@ -641,6 +641,9 @@
         }
       },
       "ETrade.DTO/1.0.0": {
+        "dependencies": {
+          "ETrade.Entities": "1.0.0"
+        },
         "runtime": {
           "ETrade.DTO.dll": {}
         }

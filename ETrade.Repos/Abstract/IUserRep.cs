@@ -11,7 +11,7 @@ namespace ETrade.Repos.Abstract
 {
     public interface IUserRep : IBaseRepository<User>
     {
-        // User CreateUser(User user);
-        BaseMethodResult CreateUser(UserDTO user);
+        UserDTO CreateUser(UserDTO user);
+        UserDTO Login(string Mail, string Password);
     }
 }

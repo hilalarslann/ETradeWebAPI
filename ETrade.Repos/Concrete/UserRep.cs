@@ -19,104 +19,59 @@ namespace ETrade.Repos.Concrete
         {
             _db = db;
         }
-        //public User CreateUser(User user)
-        //{
-        //    User selectedUser = Get(x => x.Mail == user.Mail);
-        //    if (selectedUser == null)
-        //        user.Error = false;
-        //    else
-        //        user.Error = true;
-
-        //    CheckPassword(user);
-
-        //    user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
-        //    user.Role = "User";
-        //    return user;
-        //}
-        //public void CheckPassword(User user)
-        //{
-        //    if ((user.Password.Length >= 8) && (user.Password.Length <= 14) && (user.Password.Any(char.IsLower)) && (user.Password.Any(char.IsUpper)))
-        //    {
-        //        user.CheckPassword = true;
-        //    }
-        //    else if (user.Password.Contains(" "))
-        //    {
-        //        user.CheckPassword = false;
-        //    }
-        //    else
-        //    {
-        //        user.CheckPassword = false;
-        //    }
-        //}
-
-        public BaseMethodResult CreateUser(UserDTO user)
+        public UserDTO CreateUser(UserDTO userDto)
         {
-            BaseMethodResult result = new BaseMethodResult();
-            User selectedUser = Get(x => x.Mail == user.Mail);
+            User selectedUser = Get(x => x.Mail == userDto.Mail);
             if (selectedUser != null)
             {
-                result.IsSucceed = false;
-                result.Msg = "mail mevcut";
-                return result;
+                userDto.Error = true;
+                userDto.Msg = "Bu isimde hesap mevcuttur";
+                return userDto;
+            }
+            if (userDto.Password.Length < 7 || !(userDto.Password.Any(char.IsLower)) || !(userDto.Password.Any(char.IsUpper)))
+            {
+                userDto.Error = true;
+                userDto.Msg = "Şifreniz küçük, büyük harf içermeli en 7 karakterden oluşmalıdır";
+                return userDto;
+
+            }
+            if (userDto.Password != userDto.RePassword)
+            {
+                userDto.Error = true;
+                userDto.Msg = "Şifreler eşleşmiyor";
+                return userDto;
             }
 
-            result = CheckPassword(user);
-            if (!result.IsSucceed)
-            {
-                return result;
-            }
+            userDto.Password = BCrypt.Net.BCrypt.HashPassword(userDto.Password);
+            userDto.Role = "User";
 
-            var newUser = new User()
-            {
-                Id = user.Id,
-                Mail = user.Mail,
-                Password = BCrypt.Net.BCrypt.HashPassword(user.Password),
-                Role = "User"
-            };
-            Add(newUser);
-            result.IsSucceed = Add(newUser);
-            if (!result.IsSucceed)
-            {
-                result.Msg = "kaydelimedei";
-                return result;
-            }
-            result.Msg = "başarılı";
-            return result;
+            return userDto;
         }
-        public BaseMethodResult CheckPassword(UserDTO user)
-        {
-            BaseMethodResult result = new BaseMethodResult();
 
-            if ((user.Password.Length >= 8) && (user.Password.Length <= 14) && (user.Password.Any(char.IsLower)) && (user.Password.Any(char.IsUpper)))
+        public UserDTO Login(string Mail, string Password)
+        {
+            User selectedUser = Get(x => x.Mail == Mail);
+            UserDTO user = new UserDTO();
+            user.Mail = Mail;
+
+            if (selectedUser != null)
             {
-                if (user.Password.Contains(" "))
+                user.Error = false;
+                bool verified = BCrypt.Net.BCrypt.Verify(Password, selectedUser.Password);
+                if (verified == true)
                 {
-                    result.IsSucceed = false;
-                    result.Msg = "boşluk içermemelidir";
-                    return result;
+                    user.Role = selectedUser.Role;
+                    user.Id = selectedUser.Id;
+                    user.Error = false;
                 }
-                else
-                {
-                    result.IsSucceed = true;
-                }
+                else user.Error = true;
             }
             else
             {
-                result.IsSucceed = false;
-                result.Msg = "14 karakter";
-                return result;
+                user.Msg = "Kullanıcı adı ya da şfr hatalı";
+                user.Error = true;
             }
-<<<<<<< Updated upstream
-            if (user.Password != user.RePassword)
-            {
-                result.IsSucceed = false;
-                result.Msg = "şifreler aynı değil";
-                return result;
-            }
-            return result;
-=======
->>>>>>> Stashed changes
+            return user;
         }
-
     }
 }

@@ -11,14 +11,24 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddDbContext<ETradeContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnect")));
+//add for session
+builder.Services.AddDistributedMemoryCache();
+
+//add for session
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromSeconds(10);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<ETradeContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnect")));
 
 builder.Services.AddScoped<IBasketDetailRep, BasketDetailRep<BasketDetail>>();
 builder.Services.AddScoped<IBasketMasterRep, BasketMasterRep<BasketMaster>>();
@@ -49,6 +59,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+//add for session
+app.UseSession();
 
 app.MapControllers();
 

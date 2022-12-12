@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ETrade.Entities\ETrade.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

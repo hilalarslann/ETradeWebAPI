@@ -45,10 +45,7 @@ namespace ETrade.UoW
 
         public bool Commit()
         {
-            if (_db.SaveChanges() > 0)
-                return true;
-
-            return false;
+            return _db.SaveChanges() > 0;
         }
     }
 }

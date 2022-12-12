@@ -191,3 +191,4 @@ C:\Users\SEM\Desktop\ETradeWebAPI\ETradeProject\obj\Debug\net6.0\ETrade.UI.genru
 C:\Users\SEM\Desktop\ETradeWebAPI\ETradeProject\obj\Debug\net6.0\ref\ETrade.UI.dll
 C:\Users\SEM\Desktop\ETradeWebAPI\ETradeProject\bin\Debug\net6.0\ETrade.DTO.dll
 C:\Users\SEM\Desktop\ETradeWebAPI\ETradeProject\bin\Debug\net6.0\ETrade.DTO.pdb
+C:\Users\SEM\Desktop\ETradeWebAPI\ETradeProject\bin\Debug\net6.0\Newtonsoft.Json.dll

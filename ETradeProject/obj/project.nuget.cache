@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h18s7CjsvfoEFumq16kn1VNWu61Oea7rybFvPFeJA1h4b1Sq7JwS7BeFnYTwoNTBE36nkhM7sNDppsnAdSb2yQ==",
+  "dgSpecHash": "50RdvKREc4wsnl5EGQG0ct+Wdcl17uIMiX9E8YL1UiH0lUTJ258/Q3NORuz+No9m6TmrXVGgFaqyt+IH4r4Wcg==",
   "success": true,
   "projectFilePath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETradeProject\\ETrade.UI.csproj",
   "expectedPackageFiles": [
@@ -45,6 +45,7 @@
     "C:\\Users\\SEM\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\SEM\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\SEM\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\SEM\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\SEM\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\SEM\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\SEM\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
