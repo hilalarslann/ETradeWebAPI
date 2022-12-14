@@ -11,7 +11,7 @@ namespace ETrade.UoW
     public class UoW : IUoW
     {
         ETradeContext _db;
-        public UoW(ETradeContext db, IBasketDetailRep basketDetailRep, IBasketMasterRep basketMasterRep, ICategoryRep categoryRep, ICityRep cityRep, ICountyRep countyRep, IProductRep productRep, IUnitRep unitRep, IUserRep userRep, IVatRep vatRep)
+        public UoW(ETradeContext db, IBasketDetailRep basketDetailRep, IBasketMasterRep basketMasterRep, ICategoryRep categoryRep, ICityRep cityRep, ICountyRep countyRep, IProductRep productRep, IUnitRep unitRep, IUserRep userRep, IVatRep vatRep, IBrandRep brandRep, IColorRep colorRep, ISubCategoryRep subCategoryRep, ISizeRep sizeRep)
         {
             _db = db;
             _BasketDetailRep = basketDetailRep;
@@ -23,6 +23,10 @@ namespace ETrade.UoW
             _UnitRep = unitRep;
             _UserRep = userRep;
             _VatRep = vatRep;
+            _BrandRep = brandRep;
+            _ColorRep = colorRep;
+            _SubCategoryRep = subCategoryRep;
+            _SizeRep = sizeRep;
         }
 
         public IBasketDetailRep _BasketDetailRep { get; private set; }
@@ -42,6 +46,14 @@ namespace ETrade.UoW
         public IUserRep _UserRep { get; private set; }
 
         public IVatRep _VatRep { get; private set; }
+
+        public ISubCategoryRep _SubCategoryRep { get; private set; }
+
+        public ISizeRep _SizeRep { get; private set; }
+
+        public IColorRep _ColorRep { get; private set; }
+
+        public IBrandRep _BrandRep { get; private set; }
 
         public bool Commit()
         {

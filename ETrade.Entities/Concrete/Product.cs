@@ -11,16 +11,31 @@ namespace ETrade.Entities.Concrete
     {
         public string ProductName { get; set; }
         public decimal UnitPrice { get; set; }
-        public int CategoryId { get; set; }
+        public int Amount { get; set; }
+        public int SubCatId { get; set; }
+        public int SizeId { get; set; }
         public int UnitId { get; set; }
+        public int ColorId { get; set; }
+        public int BrandId { get; set; }
+        [ForeignKey("BrandId")]
+        public Brand Brand { get; set; }
+
         public int VatId { get; set; }
         [ForeignKey("VatId")]
         public Vat Vats { get; set; }
-        [ForeignKey("CategoryId")]
-        public Category Categories { get; set; }
+
         [ForeignKey("UnitId")]
         public Unit Unit { get; set; }
-        public ICollection<BasketDetail> BasketDetail { get; set; }
+
+        [ForeignKey("SizeId")]
+        public Size Size { get; set; }
+
+        [ForeignKey("SubCatId")]
+        public SubCategory SubCategory { get; set; }
+
+        [ForeignKey("ColorId")]
+        public Color Color { get; set; }
+        public ICollection<BasketDetail> BasketDetails { get; set; }
 
     }
 }

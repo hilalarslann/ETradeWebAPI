@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace ETrade.Entities.Concrete
 {
-    public class Brand : BaseDescription,IBaseTable
+    public class Brand : BaseDescription
     {
-        public int Id { get; set; }
-
+        public ICollection<Product> Products { get; set; }
     }
 }

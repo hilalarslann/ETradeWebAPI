@@ -19,6 +19,12 @@ namespace ETrade.UoW
         IUnitRep _UnitRep { get; }
         IUserRep _UserRep { get; }
         IVatRep _VatRep { get; }
+        ISubCategoryRep _SubCategoryRep { get; }    
+        ISizeRep _SizeRep { get; }  
+        IColorRep  _ColorRep { get; }
+        IBrandRep  _BrandRep { get; }
+
+
         bool Commit();
 
     }

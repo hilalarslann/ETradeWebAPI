@@ -1,5 +1,6 @@
 using ETrade.Dal;
 using ETrade.DTO;
+using ETrade.DTO.Models;
 using ETrade.Entities.Concrete;
 using ETrade.Repos.Abstract;
 using ETrade.Repos.Concrete;
@@ -39,12 +40,19 @@ builder.Services.AddScoped<IProductRep, ProductRep<Product>>();
 builder.Services.AddScoped<IUnitRep, UnitRep<Unit>>();
 builder.Services.AddScoped<IVatRep, VatRep<Vat>>();
 builder.Services.AddScoped<IUserRep, UserRep<User>>();
+builder.Services.AddScoped<ISizeRep, SizeRep<Size>>();
+builder.Services.AddScoped<IBrandRep, BrandRep<Brand>>();
+builder.Services.AddScoped<ISubCategoryRep, SubCategoryRep<SubCategory>>();
+builder.Services.AddScoped<IColorRep, ColorRep<Color>>();
 builder.Services.AddScoped<IUoW, UoW>();
 builder.Services.AddScoped<User>();
 builder.Services.AddScoped<BasketMaster>();
 builder.Services.AddScoped<BasketDetail>();
 builder.Services.AddScoped<Response>();
 builder.Services.AddScoped<UserDTO>();
+builder.Services.AddScoped<ProductDTO>();
+builder.Services.AddScoped<ProductModel>();
+
 
 
 var app = builder.Build();
@@ -63,5 +71,7 @@ app.UseAuthorization();
 app.UseSession();
 
 app.MapControllers();
+//Swagger
+app.UseDeveloperExceptionPage();
 
 app.Run();

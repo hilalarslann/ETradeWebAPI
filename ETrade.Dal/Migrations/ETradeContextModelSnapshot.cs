@@ -33,7 +33,7 @@ namespace ETrade.Dal.Migrations
                     b.Property<int>("Amount")
                         .HasColumnType("int");
 
-                    b.Property<int>("OrderId")
+                    b.Property<int>("BasketMasterId")
                         .HasColumnType("int");
 
                     b.Property<int>("Ratio")
@@ -47,7 +47,7 @@ namespace ETrade.Dal.Migrations
 
                     b.HasKey("Id", "ProductId");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("BasketMasterId");
 
                     b.HasIndex("ProductId");
 
@@ -78,6 +78,24 @@ namespace ETrade.Dal.Migrations
                     b.HasIndex("EntityId");
 
                     b.ToTable("BasketMaster");
+                });
+
+            modelBuilder.Entity("ETrade.Entities.Concrete.Brand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
                 });
 
             modelBuilder.Entity("ETrade.Entities.Concrete.Category", b =>
@@ -116,6 +134,24 @@ namespace ETrade.Dal.Migrations
                     b.ToTable("Cities");
                 });
 
+            modelBuilder.Entity("ETrade.Entities.Concrete.Color", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Colors");
+                });
+
             modelBuilder.Entity("ETrade.Entities.Concrete.County", b =>
                 {
                     b.Property<int>("Id")
@@ -147,7 +183,13 @@ namespace ETrade.Dal.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BrandId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ColorId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -158,6 +200,12 @@ namespace ETrade.Dal.Migrations
                     b.Property<string>("ProductName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SizeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SubCatId")
+                        .HasColumnType("int");
 
                     b.Property<int>("UnitId")
                         .HasColumnType("int");
@@ -170,13 +218,60 @@ namespace ETrade.Dal.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("BrandId");
+
+                    b.HasIndex("ColorId");
+
+                    b.HasIndex("SizeId");
+
+                    b.HasIndex("SubCatId");
 
                     b.HasIndex("UnitId");
 
                     b.HasIndex("VatId");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("ETrade.Entities.Concrete.Size", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sizes");
+                });
+
+            modelBuilder.Entity("ETrade.Entities.Concrete.SubCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("SubCategories");
                 });
 
             modelBuilder.Entity("ETrade.Entities.Concrete.Unit", b =>
@@ -260,12 +355,12 @@ namespace ETrade.Dal.Migrations
                 {
                     b.HasOne("ETrade.Entities.Concrete.BasketMaster", "BasketMaster")
                         .WithMany("BasketDetails")
-                        .HasForeignKey("OrderId")
+                        .HasForeignKey("BasketMasterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ETrade.Entities.Concrete.Product", "Product")
-                        .WithMany("BasketDetail")
+                        .WithMany("BasketDetails")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -307,9 +402,27 @@ namespace ETrade.Dal.Migrations
 
             modelBuilder.Entity("ETrade.Entities.Concrete.Product", b =>
                 {
-                    b.HasOne("ETrade.Entities.Concrete.Category", "Categories")
+                    b.HasOne("ETrade.Entities.Concrete.Brand", "Brand")
                         .WithMany("Products")
-                        .HasForeignKey("CategoryId")
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ETrade.Entities.Concrete.Color", "Color")
+                        .WithMany("Products")
+                        .HasForeignKey("ColorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ETrade.Entities.Concrete.Size", "Size")
+                        .WithMany("Products")
+                        .HasForeignKey("SizeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ETrade.Entities.Concrete.SubCategory", "SubCategory")
+                        .WithMany()
+                        .HasForeignKey("SubCatId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -325,11 +438,28 @@ namespace ETrade.Dal.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Categories");
+                    b.Navigation("Brand");
+
+                    b.Navigation("Color");
+
+                    b.Navigation("Size");
+
+                    b.Navigation("SubCategory");
 
                     b.Navigation("Unit");
 
                     b.Navigation("Vats");
+                });
+
+            modelBuilder.Entity("ETrade.Entities.Concrete.SubCategory", b =>
+                {
+                    b.HasOne("ETrade.Entities.Concrete.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("ETrade.Entities.Concrete.User", b =>
@@ -346,7 +476,7 @@ namespace ETrade.Dal.Migrations
                     b.Navigation("BasketDetails");
                 });
 
-            modelBuilder.Entity("ETrade.Entities.Concrete.Category", b =>
+            modelBuilder.Entity("ETrade.Entities.Concrete.Brand", b =>
                 {
                     b.Navigation("Products");
                 });
@@ -356,6 +486,11 @@ namespace ETrade.Dal.Migrations
                     b.Navigation("Counties");
                 });
 
+            modelBuilder.Entity("ETrade.Entities.Concrete.Color", b =>
+                {
+                    b.Navigation("Products");
+                });
+
             modelBuilder.Entity("ETrade.Entities.Concrete.County", b =>
                 {
                     b.Navigation("Users");
@@ -363,7 +498,12 @@ namespace ETrade.Dal.Migrations
 
             modelBuilder.Entity("ETrade.Entities.Concrete.Product", b =>
                 {
-                    b.Navigation("BasketDetail");
+                    b.Navigation("BasketDetails");
+                });
+
+            modelBuilder.Entity("ETrade.Entities.Concrete.Size", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("ETrade.Entities.Concrete.Unit", b =>
