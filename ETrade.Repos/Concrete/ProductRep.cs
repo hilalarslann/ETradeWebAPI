@@ -56,12 +56,6 @@ namespace ETrade.Repos.Concrete
             //Yeni ürün eklediğinde var olan üründen varsa ne yapılmalı
             //Varsa olan ürünün adeti arttırılıp tekrar veritabanına eklenmemeli.
 
-            if (true)
-            {
-                //test
-                //sdgsdg
-            }
-
             return p;
         }
     }
