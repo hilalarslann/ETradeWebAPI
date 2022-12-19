@@ -16,6 +16,7 @@ namespace ETrade.Repos.Concrete
         public SubCategoryRep(ETradeContext db) : base(db)
         {
             //testt
+            //lkhuıh
         }
         public List<SubCategoryDTO> ListSubCategory()
         {
