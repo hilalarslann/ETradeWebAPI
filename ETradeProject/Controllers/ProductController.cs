@@ -45,5 +45,31 @@ namespace ETrade.UI.Controllers
 
             return _response;
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var product = _uow._ProductRep.GetById(id);
+
+            if (product is null)
+            {
+                return BadRequest("The product was not found");
+            }
+
+            return Ok(product);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var product = _uow._ProductRep.GetById(id);
+            if (product is null)
+                return BadRequest("The Product that you want to delete is not available in DataBase");
+
+            _uow._ProductRep.Delete(id);
+            _uow.Commit();
+
+            return Ok("Product Deleted");
+        }
     }
 }

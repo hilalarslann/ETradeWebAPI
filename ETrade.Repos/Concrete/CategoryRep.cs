@@ -1,5 +1,6 @@
 ﻿using ETrade.Core;
 using ETrade.Dal;
+using ETrade.DTO;
 using ETrade.Entities.Concrete;
 using ETrade.Repos.Abstract;
 using System;

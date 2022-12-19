@@ -58,5 +58,11 @@ namespace ETrade.Repos.Concrete
 
             return p;
         }
+
+        public ProductDTO GetById(int id)
+        {
+            var product = ListProduct().Where(x => x.Id == id).SingleOrDefault(); 
+            return product;
+        }
     }
 }

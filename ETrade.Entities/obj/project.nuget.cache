@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+ptINAoxceO8mcJdHhVyKHRXaD0zx5wHxLw9L0BbnxoOYToxp9qRrVlRu4KaBxEqNgjV7s4KNGW2anlnf50P4Q==",
+  "dgSpecHash": "LzN6pT1oQ1gFWf1ILSrF4YAWpUG7mx4WBrGGS8Y1and052BIEuqrdCiEDEompVqpVaaYxEeRHYtqppYL2ZBV7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SEM\\Desktop\\ERP301AKŞAM\\ERP301AKŞAM\\18- Katmanlı Mimari\\ETrade\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
+  "projectFilePath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -46,6 +46,7 @@ builder.Services.AddScoped<ISubCategoryRep, SubCategoryRep<SubCategory>>();
 builder.Services.AddScoped<IColorRep, ColorRep<Color>>();
 builder.Services.AddScoped<IUoW, UoW>();
 builder.Services.AddScoped<User>();
+builder.Services.AddScoped<Category>();
 builder.Services.AddScoped<BasketMaster>();
 builder.Services.AddScoped<BasketDetail>();
 builder.Services.AddScoped<Response>();

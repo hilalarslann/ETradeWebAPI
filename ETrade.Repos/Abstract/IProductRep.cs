@@ -14,6 +14,7 @@ namespace ETrade.Repos.Abstract
     {
         List<ProductDTO> ListProduct();
         public Product AddProduct(ProductModel productModel);
+        public ProductDTO GetById(int id);
 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using ETrade.Core;
 using ETrade.Dal;
+using ETrade.DTO;
 using ETrade.Entities.Concrete;
 using ETrade.Repos.Abstract;
 using System;
@@ -14,6 +15,15 @@ namespace ETrade.Repos.Concrete
     {
         public SubCategoryRep(ETradeContext db) : base(db)
         {
+
+        }
+        public List<SubCategoryDTO> ListSubCategory()
+        {
+            return Set().Select(x => new SubCategoryDTO
+            {
+                SubCategory = x.Description,
+                Category = x.Category.Description
+            }).ToList();
         }
     }
 }

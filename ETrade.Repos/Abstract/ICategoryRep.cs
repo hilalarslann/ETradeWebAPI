@@ -1,4 +1,5 @@
 ﻿using ETrade.Core;
+using ETrade.DTO;
 using ETrade.Entities.Concrete;
 using System;
 using System.Collections.Generic;

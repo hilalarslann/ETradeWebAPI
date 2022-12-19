@@ -10,6 +10,7 @@ namespace ETrade.Entities.Concrete
 {
     public class BaseDescription : IBaseTable, IBaseDescription
     {
+        [Key]
         public int Id { get; set; }
 
         //Returns the number of characters in a string.

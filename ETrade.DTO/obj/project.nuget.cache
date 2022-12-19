@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q/ZuxqYhZ7V01xbBSbU3Lw9O5wJQ4XezwHI9J/eLghyZXs5vG1FdXhZ3KnFGt9FMZPzCG63jvN+L7l8ANlCu6g==",
+  "dgSpecHash": "w/9E9ggM4wtMw6AFIBP4NVcJpxv5ORavlQdeWK3PmWF5CulY+eUnmYxmoweo+y88k/1Ux+SBL7R/Q6zu688p0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SEM\\Desktop\\ERP301AKŞAM\\ERP301AKŞAM\\18- Katmanlı Mimari\\ETrade\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj",
+  "projectFilePath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
