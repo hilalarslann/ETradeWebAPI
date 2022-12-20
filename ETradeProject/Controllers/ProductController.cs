@@ -19,6 +19,7 @@ namespace ETrade.UI.Controllers
             _uow = uow;
             _response = response;
         }
+
         [HttpGet]
         public List<ProductDTO> ProductList()
         {
@@ -30,7 +31,8 @@ namespace ETrade.UI.Controllers
         {
             try
             {
-                _uow._ProductRep.Add(_uow._ProductRep.AddProduct(productModel));
+                var product = _uow._ProductRep.AddProduct(productModel);
+                _uow._ProductRep.Add(product);
                 _response.Error = false;
                 _response.Msg = "Başarılı eklendi";
                 _uow.Commit();
@@ -47,29 +49,49 @@ namespace ETrade.UI.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public ProductDTO GetById(int id)
         {
-            var product = _uow._ProductRep.GetById(id);
-
-            if (product is null)
-            {
-                return BadRequest("The product was not found");
-            }
-
-            return Ok(product);
+            return _uow._ProductRep.GetById(id);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public Response DeleteProduct(int id)
         {
-            var product = _uow._ProductRep.GetById(id);
-            if (product is null)
-                return BadRequest("The Product that you want to delete is not available in DataBase");
+            try
+            {
+                _uow._ProductRep.Delete(id);
+                _response.Error = false;
+                _response.Msg = "Başarı ile silindi";
+                _uow.Commit();
+            }
+            catch (Exception ex)
+            {
+                _response.Error = false;
+                _response.Msg = ex.Message;
+                throw;
+            }
 
-            _uow._ProductRep.Delete(id);
-            _uow.Commit();
+            return _response;
+        }
 
-            return Ok("Product Deleted");
+        [HttpPut("{id}")]
+        public Response Update(int id, ProductModel pModel)
+        {
+            try
+            {
+                _uow._ProductRep.Put(id, pModel);
+                _uow.Commit();
+                _response.Error = false;
+                _response.Msg = "Güncellendi";
+            }
+            catch (Exception ex)
+            {
+                _response.Error = true;
+                _response.Msg = ex.Message;
+                throw;
+            }
+
+            return _response;
         }
     }
 }

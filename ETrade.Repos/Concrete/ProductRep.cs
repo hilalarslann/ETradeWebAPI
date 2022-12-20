@@ -64,5 +64,21 @@ namespace ETrade.Repos.Concrete
             var product = ListProduct().Where(x => x.Id == id).SingleOrDefault(); 
             return product;
         }
+
+        public void Put(int id, ProductModel productModel)
+        {
+            Product p = Find(id);
+
+            p.ProductName = productModel.ProductName;
+            p.UnitPrice = productModel.UnitPrice;
+            p.Amount = productModel.Amount;
+            p.ColorId = productModel.ColorId;
+            p.SizeId = productModel.SizeId;
+            p.BrandId = productModel.BrandId;
+            p.SubCatId = productModel.SubCategoryId;
+            p.UnitId = productModel.UnitId;
+            p.VatId = productModel.VatId;
+
+        }
     }
 }

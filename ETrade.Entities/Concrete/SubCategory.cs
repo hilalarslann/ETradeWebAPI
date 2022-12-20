@@ -10,8 +10,9 @@ namespace ETrade.Entities.Concrete
 {
     public class SubCategory : BaseDescription
     {
+        //SubCategory de veritabanına aynı verinin girilmemesi için composite key yapılabilir.
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
     }
 }

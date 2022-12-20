@@ -24,20 +24,6 @@ namespace ETrade.UI.Controllers
             return _uow._CategoryRep.List();
         }
 
-
-        [HttpGet("{id}")]
-        public IActionResult GetByIdCategory(int id)
-        {
-            var category = _uow._CategoryRep.Get(x => x.Id == id);
-
-            if (category is null)
-            {
-                return BadRequest("The category was not found");
-            }
-
-            return Ok(category);
-        }
-
         [HttpPost]
         public Response AddCategory(Category category)
         {
@@ -54,20 +40,29 @@ namespace ETrade.UI.Controllers
                 _response.Msg = ex.Message;
                 throw;
             }
+
             return _response;
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteCategory(int id)
+        public Response DeleteCategory(int id)
         {
-            var category = _uow._CategoryRep.Get(x => x.Id == id);
-            if (category is null)
-                return BadRequest("The category that you want to delete is not available in DataBase");
+            try
+            {
+                _uow._CategoryRep.Delete(id);
+                _response.Error = false;
+                _response.Msg = "Başarı ile silindi";
+                _uow.Commit();
+            }
+            catch (Exception ex)
+            {
+                _response.Error = false;
+                _response.Msg = ex.Message;
+                throw;
+            }
 
-            _uow._CategoryRep.Delete(id);
-            _uow.Commit();
-
-            return Ok("Category Deleted");
+            return _response;
         }
+
     }
 }

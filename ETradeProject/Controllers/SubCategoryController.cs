@@ -25,18 +25,6 @@ namespace ETrade.UI.Controllers
             return _uow._SubCategoryRep.ListSubCategory();
         }
 
-        //[HttpPost]
-        //public IActionResult Add(SubCategory subCategory)
-        //{
-        //    var product = _uow._SubCategoryRep.Find(subCategory);
-        //    if (product is not null)
-        //        return BadRequest("Product is already available");
-
-        //    _uow._SubCategoryRep.Add(subCategory);
-
-        //    return Ok("Product Added");
-        //}
-
         [HttpPost]
         public Response AddSubCategory(SubCategory subCategory)
         {
@@ -53,6 +41,25 @@ namespace ETrade.UI.Controllers
                 _response.Msg = ex.Message;
                 throw;
             }
+            return _response;
+        }
+        [HttpDelete("{id}")]
+        public Response DeleteSubCategory(int id)
+        {
+            try
+            {
+                _uow._SubCategoryRep.Delete(id);
+                _response.Error = false;
+                _response.Msg = "Başarı ile silindi";
+                _uow.Commit();
+            }
+            catch (Exception ex)
+            {
+                _response.Error = false;
+                _response.Msg = ex.Message;
+                throw;
+            }
+
             return _response;
         }
     }
