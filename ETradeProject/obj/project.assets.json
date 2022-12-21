@@ -3933,11 +3933,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETradeProject\\ETrade.UI.csproj",
+      "projectUniqueName": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETradeProject\\ETrade.UI.csproj",
       "projectName": "ETrade.UI",
-      "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETradeProject\\ETrade.UI.csproj",
+      "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETradeProject\\ETrade.UI.csproj",
       "packagesPath": "C:\\Users\\SEM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETradeProject\\obj\\",
+      "outputPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETradeProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3959,17 +3959,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETrade.Dal\\ETrade.Dal.csproj": {
-              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETrade.Dal\\ETrade.Dal.csproj"
+            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETrade.Dal\\ETrade.Dal.csproj": {
+              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETrade.Dal\\ETrade.Dal.csproj"
             },
-            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETrade.Entities\\ETrade.Entities.csproj": {
-              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETrade.Entities\\ETrade.Entities.csproj"
+            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETrade.Entities\\ETrade.Entities.csproj": {
+              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETrade.Entities\\ETrade.Entities.csproj"
             },
-            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETrade.Repos\\ETrade.Repos.csproj": {
-              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETrade.Repos\\ETrade.Repos.csproj"
+            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETrade.Repos\\ETrade.Repos.csproj": {
+              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETrade.Repos\\ETrade.Repos.csproj"
             },
-            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETrade.UoW\\ETrade.UoW.csproj": {
-              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETrade.UoW\\ETrade.UoW.csproj"
+            "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETrade.UoW\\ETrade.UoW.csproj": {
+              "projectPath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETrade.UoW\\ETrade.UoW.csproj"
             }
           }
         }
