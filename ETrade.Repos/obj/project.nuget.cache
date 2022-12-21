@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9/EZFWvsp7/vPdjPrVeGO8QcReJazUFu4lvvVpBjNxR+5ubL60HGzAcdz6gBqAKevumHdr0MO8nLagc88kyDpA==",
+  "dgSpecHash": "od6mWTo1AA1jshUyewk/VYJ4UlraR8WcGf2NUx40cK1CGe7NvbpDqhQzjQJP8JjUYNFc7yS0gsw469rEOwFvrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETrade.Repos\\ETrade.Repos.csproj",
+  "projectFilePath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-E\\ETrade.Repos\\ETrade.Repos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SEM\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\SEM\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
