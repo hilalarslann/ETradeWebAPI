@@ -20,8 +20,6 @@ namespace ETrade.Dal
             modelBuilder.Entity<BasketDetail>()
                 .HasKey(basket => new { basket.Id, basket.ProductId });
 
-            modelBuilder.Entity<SubCategory>()
-    .HasKey(subCat => new { subCat.Description, subCat.CategoryId });
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<SubCategory> SubCategories { get; set; }

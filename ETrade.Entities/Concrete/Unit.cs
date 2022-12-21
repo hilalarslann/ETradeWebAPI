@@ -8,7 +8,7 @@ namespace ETrade.Entities.Concrete
 {
     public class Unit : BaseDescription
     {
-        public ICollection<Product> Products { get; set; }
-        public ICollection<BasketDetail> BasketDetail { get; set; }
+        public ICollection<Product>? Products { get; set; }
+        public ICollection<BasketDetail>? BasketDetail { get; set; }
     }
 }
