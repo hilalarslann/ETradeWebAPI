@@ -10,6 +10,6 @@ namespace ETrade.Entities.Concrete
     {
         //Ratio : Oran
         public decimal Ratio { get; set; }
-        public ICollection<Product> Products { get; set; }
+        public ICollection<Product>? Products { get; set; }
     }
 }

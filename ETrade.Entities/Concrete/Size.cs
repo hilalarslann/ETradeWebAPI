@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ETrade.Entities.Concrete
 {
-    public class Size:BaseDescription
+    public class Size : BaseDescription
     {
-        public ICollection<Product> Products { get; set; }
+        public ICollection<Product>? Products { get; set; }
     }
 }

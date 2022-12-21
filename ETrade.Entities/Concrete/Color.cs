@@ -8,6 +8,6 @@ namespace ETrade.Entities.Concrete
 {
     public class Color:BaseDescription
     {
-        public ICollection<Product> Products { get; set; }
+        public ICollection<Product>? Products { get; set; }
     }
 }

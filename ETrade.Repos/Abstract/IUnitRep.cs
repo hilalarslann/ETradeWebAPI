@@ -10,5 +10,7 @@ namespace ETrade.Repos.Abstract
 {
     public interface IUnitRep : IBaseRepository<Unit>
     {
+        public List<Unit> ListUnit();
+        public Unit AddUnit(Unit unit);
     }
 }
