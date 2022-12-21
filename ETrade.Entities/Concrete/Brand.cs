@@ -9,6 +9,6 @@ namespace ETrade.Entities.Concrete
 {
     public class Brand : BaseDescription
     {
-        public ICollection<Product> Products { get; set; }
+        public ICollection<Product> ?Products { get; set; }
     }
 }

@@ -81,6 +81,7 @@ namespace ETrade.UI.Controllers
 
             return _response;
         }
+        [HttpPost]
         public Response Logout()
         {
             try
