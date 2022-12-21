@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LzN6pT1oQ1gFWf1ILSrF4YAWpUG7mx4WBrGGS8Y1and052BIEuqrdCiEDEompVqpVaaYxEeRHYtqppYL2ZBV7A==",
+  "dgSpecHash": "nB5uV2k76AmHSVcDn3l1+wWY3PgZS16+A4N94WBWgvVC8bSyTE6Obd2wmL0n76N9YIdzrBWbNMyD4YHzkg/eBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
+  "projectFilePath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI-H\\ETrade.Entities\\ETrade.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

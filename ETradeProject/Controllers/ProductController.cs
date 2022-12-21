@@ -16,6 +16,7 @@ namespace ETrade.UI.Controllers
         Response _response;
         public ProductController(IUoW uow, Response response)
         {
+            //test
             _uow = uow;
             _response = response;
         }
