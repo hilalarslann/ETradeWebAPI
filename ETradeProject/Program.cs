@@ -49,6 +49,8 @@ builder.Services.AddScoped<User>();
 builder.Services.AddScoped<Category>();
 builder.Services.AddScoped<BasketMaster>();
 builder.Services.AddScoped<BasketDetail>();
+builder.Services.AddScoped<BasketDetailModel>();
+builder.Services.AddScoped<BasketDetailDTO>();
 builder.Services.AddScoped<Response>();
 builder.Services.AddScoped<UserDTO>();
 builder.Services.AddScoped<ProductDTO>();

@@ -1,4 +1,5 @@
 ﻿using ETrade.Core;
+using ETrade.DTO;
 using ETrade.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,5 +11,6 @@ namespace ETrade.Repos.Abstract
 {
     public interface IBasketDetailRep : IBaseRepository<BasketDetail>
     {
+        public List<BasketDetailDTO> BasketDetailDTOs(int BasketMasterId);
     }
 }

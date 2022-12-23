@@ -67,15 +67,15 @@ namespace ETrade.Dal.Migrations
                     b.Property<bool>("Completed")
                         .HasColumnType("bit");
 
-                    b.Property<int>("EntityId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("EntityId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("BasketMaster");
                 });
@@ -372,7 +372,7 @@ namespace ETrade.Dal.Migrations
                 {
                     b.HasOne("ETrade.Entities.Concrete.User", "User")
                         .WithMany("BasketMaster")
-                        .HasForeignKey("EntityId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

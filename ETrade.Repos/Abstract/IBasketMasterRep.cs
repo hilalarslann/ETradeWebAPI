@@ -1,4 +1,5 @@
 ﻿using ETrade.Core;
+using ETrade.DTO;
 using ETrade.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ETrade.Repos.Abstract
 {
-    public interface IBasketMasterRep : IBaseRepository<BasketMaster> 
+    public interface IBasketMasterRep : IBaseRepository<BasketMaster>
     {
     }
 }
