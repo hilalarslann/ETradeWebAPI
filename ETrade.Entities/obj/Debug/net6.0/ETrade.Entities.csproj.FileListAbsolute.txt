@@ -22,3 +22,15 @@ C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ETrade.Entiti
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\refint\ETrade.Entities.dll
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.pdb
 C:\Users\SEM\Desktop\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ref\ETrade.Entities.dll
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\bin\Debug\net6.0\ETrade.Entities.deps.json
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\bin\Debug\net6.0\ETrade.Entities.dll
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\bin\Debug\net6.0\ETrade.Entities.pdb
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.csproj.AssemblyReference.cache
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.AssemblyInfoInputs.cache
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.AssemblyInfo.cs
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.csproj.CoreCompileInputs.cache
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.dll
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\refint\ETrade.Entities.dll
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ETrade.Entities.pdb
+C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Entities\obj\Debug\net6.0\ref\ETrade.Entities.dll

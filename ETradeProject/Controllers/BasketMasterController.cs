@@ -35,7 +35,6 @@ namespace ETrade.UI.Controllers
         [HttpPost]
         public Response Create()
         {
-            //UserDTO ? User ?
             var usr = _uow._UserRep.Find(2);
             //JsonConvert.DeserializeObject<UserDTO>(HttpContext.Session.GetString("User"));
             var selectedBasket = _uow._BasketMasterRep.Get(x => x.Completed == false && x.UserId == usr.Id);
@@ -74,32 +73,7 @@ namespace ETrade.UI.Controllers
         //    return _uow._BasketDetailRep.ListBasketDetail();
         //}
 
-        [HttpPost]
-        public Response AddBasket(BasketDetailDTO basketDetailDTO)
-        {
-            BasketMaster bm = new BasketMaster();
-            BasketDetail bd = new BasketDetail();
-            bd.Id = bm.Id;
-            _etradeContext.SaveChanges();
-            try
-            {
-                basketDetailDTO.Id = bd.Id;
-                bd.Product.ProductName = basketDetailDTO.Name;
-                bd.Product.Brand.Description = basketDetailDTO.Brand;
-                bd.Product.Amount = basketDetailDTO.Amount;
-                basketDetailDTO.Total = (bd.Product.UnitPrice * bd.Product.Amount) * (1 + bd.Product.Vats.Ratio);
-                _uow._BasketDetailRep.Add(bd);
-                _response.Error = false;
-                _response.Msg = "Başarılı eklendi";
-                _uow.Commit();
-            }
-            catch (Exception)
-            {
 
-                throw;
-            }
-            return _response;
-        }
 
         //[HttpPost]
         //public Response AddBasket(int id)
@@ -122,6 +96,36 @@ namespace ETrade.UI.Controllers
         //    _basketDetail.UnitPrice = product.UnitPrice;
         //    _uow._BasketDetailRep.Add(_basketDetail);
         //    _uow.Commit();
+        //    return _response;
+        //}
+
+
+
+
+        //[HttpPost]
+        //public Response AddBasket(BasketDetailDTO basketDetailDTO)
+        //{
+        //    BasketMaster bm = new BasketMaster();
+        //    BasketDetail bd = new BasketDetail();
+        //    bd.Id = bm.Id;
+        //    _etradeContext.SaveChanges();
+        //    try
+        //    {
+        //        basketDetailDTO.Id = bd.Id;
+        //        bd.Product.ProductName = basketDetailDTO.Name;
+        //        bd.Product.Brand.Description = basketDetailDTO.Brand;
+        //        bd.Product.Amount = basketDetailDTO.Amount;
+        //        basketDetailDTO.Total = (bd.Product.UnitPrice * bd.Product.Amount) * (1 + bd.Product.Vats.Ratio);
+        //        _uow._BasketDetailRep.Add(bd);
+        //        _response.Error = false;
+        //        _response.Msg = "Başarılı eklendi";
+        //        _uow.Commit();
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //        throw;
+        //    }
         //    return _response;
         //}
     }

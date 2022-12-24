@@ -19,7 +19,7 @@ namespace ETrade.Repos.Concrete
         }
         public List<BasketDetailDTO> BasketDetailDTOs(int BasketMasterId)
         {
-            return Set().Where(x => x.Id == BasketMasterId).Select(x => new BasketDetailDTO
+            return Set().Where(x => x.BasketMasterId == BasketMasterId).Select(x => new BasketDetailDTO
             {
                 Id = x.Id,
                 ProductId = x.ProductId,

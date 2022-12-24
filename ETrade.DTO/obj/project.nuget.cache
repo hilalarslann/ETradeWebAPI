@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w/9E9ggM4wtMw6AFIBP4NVcJpxv5ORavlQdeWK3PmWF5CulY+eUnmYxmoweo+y88k/1Ux+SBL7R/Q6zu688p0Q==",
+  "dgSpecHash": "IzkUhddSKzjKHaV8+cCahCswz52oa7fkUThCzNtj9OjstIMoXcvTbvI95tActy8qyAMndXbmMlr6tX7B9K8P4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SEM\\Desktop\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj",
+  "projectFilePath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
