@@ -3264,9 +3264,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj",
+      "projectUniqueName": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj",
       "projectName": "ETrade.Core",
-      "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj",
+      "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj",
       "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Core\\obj\\",
       "projectStyle": "PackageReference",
@@ -3285,8 +3285,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj": {
-              "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj"
+            "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj": {
+              "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj"
             }
           }
         }

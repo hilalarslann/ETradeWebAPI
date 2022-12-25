@@ -16,6 +16,6 @@ namespace ETrade.Repos.Abstract
         public Product AddProduct(ProductModel productModel);
         public ProductDTO GetById(int id);
         public void Put(int id, ProductModel productModel);
-
+        public Product FindWithVat(int Id);
     }
 }

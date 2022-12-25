@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cv3R9u7zMKSI3ZakfaiL+tqR/1Ft+8MBXjP4so9PDcRMRlWs1h5K5RVOevqd3CzFVIVovSdGBKbJHAeO608L4g==",
+  "dgSpecHash": "WZuOYbSX+iRcOcKow7Iy+Pv0TGCjdcvINLqJWQ08gs1MStL11kjY9/PSEipX1sQ87Mv0lIXbvxwEEXyRx4KJoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
+  "projectFilePath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

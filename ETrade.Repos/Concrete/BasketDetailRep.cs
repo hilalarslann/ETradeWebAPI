@@ -1,6 +1,7 @@
 ﻿using ETrade.Core;
 using ETrade.Dal;
 using ETrade.DTO;
+using ETrade.DTO.Models;
 using ETrade.Entities.Concrete;
 using ETrade.Repos.Abstract;
 using System;
@@ -15,11 +16,10 @@ namespace ETrade.Repos.Concrete
     {
         public BasketDetailRep(ETradeContext db) : base(db)
         {
-
         }
-        public List<BasketDetailDTO> BasketDetailDTOs(int BasketMasterId)
+        public List<BasketDetailDTO> BasketDetailDTOs(int basketMasterId)
         {
-            return Set().Where(x => x.BasketMasterId == BasketMasterId).Select(x => new BasketDetailDTO
+            return Set().Where(x => x.Id == basketMasterId).Select(x => new BasketDetailDTO
             {
                 Id = x.Id,
                 ProductId = x.ProductId,
@@ -28,6 +28,20 @@ namespace ETrade.Repos.Concrete
                 Amount = x.Amount,
                 Total = (x.UnitPrice + x.Amount) * (1 + x.Ratio / 100),
             }).ToList();
+        }
+
+        public bool CheckProductBasket(int productId)
+        {
+            var bd = Get(x => x.ProductId == productId);
+            if (bd == null)
+            {
+                return false;
+            }
+            else
+            {
+                bd.Amount++;
+                return true;
+            }
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj": {}
+    "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj": {
+    "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj",
+        "projectUniqueName": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj",
         "projectName": "ETrade.Core",
-        "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj",
+        "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj",
         "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Core\\obj\\",
+        "outputPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj": {
-                "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj"
+              "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj": {
+                "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj": {
+    "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj",
+        "projectUniqueName": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj",
         "projectName": "ETrade.Dal",
-        "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj",
+        "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Dal\\ETrade.Dal.csproj",
         "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Dal\\obj\\",
+        "outputPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Dal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,8 +93,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
-                "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj"
+              "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
+                "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj": {
+    "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj",
+        "projectUniqueName": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj",
         "projectName": "ETrade.DTO",
-        "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj",
+        "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj",
         "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.DTO\\obj\\",
+        "outputPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -168,8 +168,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
-                "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj"
+              "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
+                "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj"
               }
             }
           }
@@ -203,14 +203,14 @@
         }
       }
     },
-    "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
+    "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
         "projectName": "ETrade.Entities",
-        "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
+        "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj",
         "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\obj\\",
+        "outputPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -258,14 +258,14 @@
         }
       }
     },
-    "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj": {
+    "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj",
+        "projectUniqueName": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj",
         "projectName": "ETrade.Repos",
-        "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj",
+        "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Repos\\ETrade.Repos.csproj",
         "packagesPath": "C:\\Users\\hilal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Repos\\obj\\",
+        "outputPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Repos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hilal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -282,14 +282,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj": {
-                "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj"
+              "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj": {
+                "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Core\\ETrade.Core.csproj"
               },
-              "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj": {
-                "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj"
+              "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj": {
+                "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.DTO\\ETrade.DTO.csproj"
               },
-              "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
-                "projectPath": "C:\\Users\\hilal\\Source\\Repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj"
+              "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj": {
+                "projectPath": "C:\\Users\\hilal\\source\\repos\\ETradeWebAPI\\ETrade.Entities\\ETrade.Entities.csproj"
               }
             }
           }

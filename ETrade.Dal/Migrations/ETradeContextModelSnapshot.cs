@@ -36,8 +36,8 @@ namespace ETrade.Dal.Migrations
                     b.Property<int>("BasketMasterId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Ratio")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Ratio")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("UnitId")
                         .HasColumnType("int");

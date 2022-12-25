@@ -11,6 +11,7 @@ namespace ETrade.Repos.Abstract
 {
     public interface IBasketDetailRep : IBaseRepository<BasketDetail>
     {
-        public List<BasketDetailDTO> BasketDetailDTOs(int BasketMasterId);
+        public List<BasketDetailDTO> BasketDetailDTOs(int basketMasterId);
+        public bool CheckProductBasket(int productId);
     }
 }

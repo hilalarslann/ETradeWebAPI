@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ETrade.Core
-build_property.ProjectDir = C:\Users\hilal\Source\Repos\ETradeWebAPI\ETrade.Core\
+build_property.ProjectDir = C:\Users\hilal\source\repos\ETradeWebAPI\ETrade.Core\

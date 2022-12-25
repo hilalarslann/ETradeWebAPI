@@ -277,7 +277,6 @@ C:\Users\hilal\Source\Repos\ETradeWebAPI\ETradeProject\obj\Debug\net6.0\ETrade.U
 C:\Users\hilal\Source\Repos\ETradeWebAPI\ETradeProject\obj\Debug\net6.0\ETrade.UI.AssemblyInfoInputs.cache
 C:\Users\hilal\Source\Repos\ETradeWebAPI\ETradeProject\obj\Debug\net6.0\ETrade.UI.AssemblyInfo.cs
 C:\Users\hilal\Source\Repos\ETradeWebAPI\ETradeProject\obj\Debug\net6.0\ETrade.UI.csproj.CoreCompileInputs.cache
-C:\Users\hilal\Source\Repos\ETradeWebAPI\ETradeProject\obj\Debug\net6.0\ETrade.UI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\hilal\Source\Repos\ETradeWebAPI\ETradeProject\obj\Debug\net6.0\ETrade.UI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\hilal\Source\Repos\ETradeWebAPI\ETradeProject\obj\Debug\net6.0\staticwebassets\msbuild.ETrade.UI.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\hilal\Source\Repos\ETradeWebAPI\ETradeProject\obj\Debug\net6.0\staticwebassets\msbuild.build.ETrade.UI.props

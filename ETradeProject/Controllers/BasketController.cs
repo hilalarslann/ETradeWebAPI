@@ -1,4 +1,5 @@
 ﻿using ETrade.DTO;
+using ETrade.DTO.Models;
 using ETrade.Entities.Concrete;
 using ETrade.UI.HttpResponse;
 using ETrade.UoW;
@@ -22,45 +23,50 @@ namespace ETrade.UI.Controllers
             _basketMaster = basketMaster;
         }
 
-
-        [HttpGet]
-        public List<BasketDetailDTO> BasketList()
+        public int UserBasketMaster()
         {
             var usr = _uow._UserRep.Find(1);
-
             var selectedBasket = _uow._BasketMasterRep.Get(x => x.Completed == false && x.UserId == usr.Id);
 
             if (selectedBasket != null)
-            {
-                return _uow._BasketDetailRep.BasketDetailDTOs(selectedBasket.Id);
-            }
-
+                return (selectedBasket.Id);
             else
             {
                 _basketMaster.OrderDate = DateTime.Now;
                 _basketMaster.UserId = usr.Id;
                 _uow._BasketMasterRep.Add(_basketMaster);
                 _uow.Commit();
-                return _uow._BasketDetailRep.BasketDetailDTOs(_basketMaster.Id);
+                return (_basketMaster.Id);
             }
         }
 
-        [HttpPost]
-        public Response AddBasket(int id)
+        [HttpGet]
+        public List<BasketDetailDTO> BasketList()
         {
-
+            return _uow._BasketDetailRep.BasketDetailDTOs(UserBasketMaster());
         }
 
+        [HttpPost]
+        public Response AddBasket(BasketDetailModel bdModel)
+        {
+            Product product = _uow._ProductRep.FindWithVat(bdModel.ProductId);
+            var usrBasketDetail = new BasketDetail();
 
+            if (_uow._BasketDetailRep.CheckProductBasket(bdModel.ProductId) == false)
+            {
+                usrBasketDetail.Id = UserBasketMaster();
+                usrBasketDetail.ProductId = product.Id;
+                usrBasketDetail.UnitId = product.UnitId;
+                usrBasketDetail.Amount = bdModel.Amount;
+                usrBasketDetail.UnitPrice = product.UnitPrice;
+                usrBasketDetail.Ratio = product.Vats.Ratio;
+                usrBasketDetail.BasketMasterId = UserBasketMaster();
+                _uow._BasketDetailRep.Add(usrBasketDetail);
+            }
 
-
-        //[HttpGet]
-        //public List<BasketDetailDTO> BasketDetailList()
-        //{
-        //    return _uow._BasketDetailRep.BasketDetailDTOs();
-        //}
-
-
+            _uow.Commit();
+            return _response;
+        }
     }
 }
 

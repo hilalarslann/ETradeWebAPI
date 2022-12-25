@@ -80,5 +80,11 @@ namespace ETrade.Repos.Concrete
             p.VatId = productModel.VatId;
 
         }
+
+        public Product FindWithVat(int Id)
+        {
+            return Set().Where(x => x.Id == Id).Include(x => x.Vats).FirstOrDefault();
+
+        }
     }
 }
